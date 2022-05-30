@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.mapboxpolyline.MapboxPolyline" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Mapbox Polyline</name>
+    <description>Polyline for Mapbox</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Datasource">
+            <property key="pointList" type="datasource" isList="true" required="false">
+                <caption>List of Points</caption>
+                <description />
+            </property>
+            <property key="latitudeAttr" type="attribute" required="true" dataSource="pointList">
+                <caption>Latitude</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="longitudeAttr" type="attribute" required="true" dataSource="pointList">
+                <caption>Longitude</caption>
+                <description />
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
